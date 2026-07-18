@@ -1,52 +1,25 @@
-<html
-  lang="pt-BR"
-  data-access-state="checking"
->
-  <head>
-    <link
-      rel="stylesheet"
-      href="css/access-guard.css?v=1"
-    >
-  </head>
-  <main>
-    <body>
+<!DOCTYPE html>
+<html lang="pt-BR" data-access-state="checking">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Crie e organize plantas baixas com o Atero Floor.">
+  <meta name="theme-color" content="#de7f6e">
+  <title>Atero Floor</title>
+  <link rel="stylesheet" href="css/access-guard.css?v=2">
+  <link rel="stylesheet" href="css/index.css?v=2">
+</head>
+<body>
+  <section class="atero-access-screen" id="atero-access-screen" role="status" aria-live="polite">
+    <div class="atero-access-card">
+      <div class="atero-access-spinner" aria-hidden="true"></div>
+      <h1>Preparando Atero Floor</h1>
+      <p>Estamos confirmando sua Conta Atero.</p>
+    </div>
+  </section>
 
-      <section
-        class="atero-access-screen"
-        id="atero-access-screen"
-        role="status"
-        aria-live="polite"
-      >
-        <div class="atero-access-card">
-          <div
-            class="atero-access-spinner"
-            aria-hidden="true"
-          ></div>
-    
-          <h1>Verificando acesso</h1>
-    
-          <p>
-            Preparando o aplicativo.
-          </p>
-        </div>
-      </section>
-    
-    
-      <div class="app-shell">
-    
-        <!--
-          Todo o header, main, dialogs
-          e footer do aplicativo ficam aqui.
-        -->
-    
-      </div>
-    
-    
-      <script
-        type="module"
-        src="js/bootstrap.js?v=1"
-      ></script>
-    
-    </body>
-  </main>
+  <div class="app-shell" aria-live="polite"></div>
+
+  <script type="module" src="js/bootstrap.js?v=2"></script>
+</body>
 </html>
