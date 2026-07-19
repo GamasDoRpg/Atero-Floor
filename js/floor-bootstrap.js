@@ -4,7 +4,7 @@ async function start() {
   const access = await requireAteroApp({ appId: "floor", fallbackName: "Atero Floor" });
   if (!access) return;
 
-  const module = await import("./floor.js?v=2");
+  const module = await import("./floor.js?v=3");
   await module.startEditor({ user: access.user, app: access.app });
 }
 
